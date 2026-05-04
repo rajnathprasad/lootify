@@ -23,7 +23,7 @@ const Cart = () => {
     }
     setCartData(tempData);
   },[cartItems])
-
+  window.scrollTo(0, 0);
   return (
     <div className='border-t pt-14'>
       <div className='text-2xl mb-3'>
@@ -57,7 +57,14 @@ const Cart = () => {
         <div className='w-full sm:w-[450px]'>
           <CartTotal />
           <div className='w-full text-end'>
-            <button onClick={()=>navigate('/place-order')} className='bg-black text-white text-sm my-8 px-8 py-3 active:bg-gray-500'>PROCEED TO CHECKOUT</button>
+            <button 
+  onClick={() => navigate('/place-order')}
+  className="px-8 py-3 my-8 text-sm text-white tracking-wide
+  bg-gradient-to-r from-emerald-800 to-teal-900/70
+  hover:opacity-90 active:scale-95
+  transition-all duration-300 rounded-md shadow-md">
+  Proceed to Checkout
+</button>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
-import NewsLetterBox from '../components/NewsLetterBox'
+import NewsLetterBox from "../components/NewsLetterBox";
 import { assets } from "../assets/assets";
 const Contact = () => {
   return (
@@ -17,19 +17,31 @@ const Contact = () => {
         <div className="flex flex-col justify-center items-start gap-6">
           <p className="font-semibold text-xl text-gray-600">Our Store</p>
           <p className="text-gray-500">
-            54709 Willms Station <br />
-            Suite 350, Washington, USA
+            Manak Vihar
+            <br />
+            Patel Nagar, MP
           </p>
           <p className="text-gray-500">
-            Tel: (415) 555-0132 <br />
-            Email: admin@forever.com
+            Phone: +91-8252494XXX <br />
+            Email: admin@fitverse.com
           </p>
-          <p className="font-semibold text-xl text-gray-600">Careers at Forever</p>
-          <p className="text-gray-500">Learn more about our teams and job openings.</p>
-          <button className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">Explore Jobs</button>
+          <p className="font-semibold text-xl text-gray-600">
+            Careers at FitVerse
+          </p>
+          <p className="text-gray-500">
+            Learn more about our teams and job openings.
+          </p>
+          <button
+            className="px-8 py-4 text-sm text-white 
+bg-gradient-to-r from-emerald-800 to-teal-900/70 
+hover:opacity-90 
+transition-all duration-500 rounded-md shadow-md"
+          >
+            Explore Jobs
+          </button>
         </div>
       </div>
-      <NewsLetterBox/>
+      <NewsLetterBox />
     </div>
   );
 };

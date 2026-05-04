@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 a.active hr{
     display: block;
 }
@@ -27,4 +28,10 @@ a.active hr{
         background-color: black;
         color : white
     }
+}
+body {
+  @apply bg-neutral-100;
+}
+input {
+  @apply  bg-neutral-100;
 }

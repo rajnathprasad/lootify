@@ -6,6 +6,7 @@ import OurPolicy from '../components/OurPolicy'
 import NewsLetterBox from '../components/NewsLetterBox'
 
 export const Home = () => {
+  window.scrollTo(0,0)
   return (
     <div>
       <Hero/>

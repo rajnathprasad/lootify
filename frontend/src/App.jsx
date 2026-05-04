@@ -15,10 +15,11 @@ import SearchBar from "./components/SearchBar"
 import { ToastContainer, toast } from 'react-toastify';
 const App = ()=>{
   return (
-  
-  <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-    <ToastContainer />
+    <>
+  <ToastContainer />
     <Navbar/>
+  <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    
     <SearchBar/>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -32,7 +33,8 @@ const App = ()=>{
       <Route path="/orders" element={<Orders/>}/>
     </Routes>
     <Footer />
-  </div>)
+  </div>
+  </>)
 }
 
 export default App

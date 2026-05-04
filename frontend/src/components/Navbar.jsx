@@ -10,9 +10,9 @@ const Navbar = () => {
   const [LatestProducts, setLatestProducts] = useState([])
   const navigate = useNavigate();
   return (
-    <div className="flex items-center justify-between py-5 font-medium">
+    <div className="sticky top-0 z-50 flex items-center justify-between py-5 px-10 font-medium bg-teal-900/50 backdrop-blur-md border-teal-800 shadow-sm shadow-black/20">
       <Link to='/'>
-      <img src={assets.logo} className="w-36" alt="logo" />
+      <img src={assets.logo} className="w-44" alt="logo" />
       </Link>
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
@@ -65,7 +65,7 @@ const Navbar = () => {
       </div>
       {/* Sidebar menu for small screens */}
       <div
-        className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? "w-full" : "w-0"}`}
+        className={`fixed top-0 right-0 bottom-0 h-screen overflow-hidden bg-white transition-all ${visible ? "w-full" : "w-0"}`}
       >
         <div className="flex flex-col text-gray-600">
           <div onClick={()=>{setVisible(false)}} className="flex items-center gap-4 p-3">
